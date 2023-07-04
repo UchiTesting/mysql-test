@@ -16,7 +16,7 @@ Either:
 - Open the csproj file and copy the GUID for user secrets
   - `<UserSecretsId>e6db96f4-0dbe-491c-b414-61b814448cd9</UserSecretsId>`
   - Gives *e6db96f4-0dbe-491c-b414-61b814448cd9*
-  - Create a *secrets.json* file in there with updated values (see [secrets.json template](<>))
+  - Create a *secrets.json* file in there with updated values (see [secrets.json template](<#secretsjson-template>))
 ## User Secrets: Start over
 
 - Remove that line from *csproj* file
@@ -37,10 +37,6 @@ This is the template how it should look into the relevant folder (flattened stru
   "db:user": "userName",
   "db:server": "serveName",
   "db:database": "databaseName",
-  // The ultra complex/secure password I always put on all my accounts for maximum security. 
-  // No one will ever think of it*
-  "db:password": "012345"
+  "db:password": "password"
 }
 ```
-<p style="font-size:0;color:transparent">* _)|_|5+ +|2011!|\\| +|-|3 5|-|!+ 0|_|+ 0|# `/0|_|<p>
-
