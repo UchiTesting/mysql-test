@@ -12,7 +12,7 @@ class Ken76MySqlProblem
         using (var connection = new MySqlConnection(connString))
         {
             connection.Open();
-            string query = "SELECT * from showvalues WHERE idstatus = '" + idStatus + "'";
+            string query = "SELECT * FROM showvalues WHERE idstatus = '" + idStatus + "'";
 
             using (var command2 = new MySqlCommand(query, connection))
             {
